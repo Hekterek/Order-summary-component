@@ -1,0 +1,175 @@
+:root
+{
+    --color-Pale-blue: hsl(225, 100%, 94%);
+    --color-Brigh-blue: hsl(245, 75%, 52%);
+
+    --color-Very-pale-blue: hsl(225, 100%, 98%);
+    --color-Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background: var(--color-Pale-blue);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_hero
+{
+    border-radius: 15px 15px 0 0;
+    width: 270px;
+    height: 130px;
+}
+
+.description
+{
+    background: white;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    width: 270px;
+    height: 330px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.description h1
+{
+    position: absolute;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.description h2
+{
+    position: absolute;
+    color: hsla(224, 23%, 55%,0.8);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 21px;
+    width: 83%;
+}
+
+.annual_plan
+{
+    background: hsla(225, 100%, 98%,0.8);
+    position: relative;
+    border-radius: 10px;
+    width: 85%;
+    height: 62px;
+    top: 142px;
+}
+
+.icon_music
+{
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    left: 12px;
+}
+
+.annual_plan .plan
+{
+    position: absolute;
+    top: 12px;
+    left: 70px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.annual_plan .price
+{
+    position: absolute;
+    bottom: 16px;
+    left: 70px;
+    font-size: 11px;
+    color: var(--color-Desaturated-blue);
+}
+
+.annual_plan .change_plan
+{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    font-size: 10.5px;
+    font-weight: 600;
+    color: hsl(245, 74%, 27%);
+    text-decoration: underline;
+}
+
+.change_plan:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button
+{
+    position: absolute;
+    border-radius: 10px;
+    border-style: solid;
+    background: var(--color-Brigh-blue);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 85%;
+    height: 40px;
+    bottom: 65px;
+    box-shadow: 0 15px 25px -16px hsl(245, 75%, 52%);
+}
+
+button:hover
+{
+    background: hsla(245, 75%, 52%,0.7);
+    cursor: pointer;
+}
+
+.canceling
+{
+    position: absolute;
+    bottom: 27px;
+    font-size: 12px;
+    color: var(--Dark-blue);
+}
+
+.canceling:hover
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
