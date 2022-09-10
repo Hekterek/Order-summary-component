@@ -17,7 +17,10 @@
 
 body
 {
-    background: var(--color-Pale-blue);
+    background: var(--color-Very-pale-blue);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100vw;
     height: 100vh;
     font-family: 'Red Hat Display';
@@ -172,4 +175,15 @@ button:hover
 .attribution a 
 { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media all and (max-width: 375px)
+{
+    body
+    {
+        background: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+    }
 }
